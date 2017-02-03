@@ -1,9 +1,7 @@
 <html>
 
-<head>
-	
+<head>	
 	<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/Inc/IncludeHead.php'); ?>
-	<title>Login</title>			
 </head>
 
 <body>
