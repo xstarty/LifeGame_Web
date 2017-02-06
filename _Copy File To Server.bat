@@ -1,1 +1,1 @@
-XCOPY "E:\SourceCode\LifeGame_Web\*" "C:\xampp\htdocs\LifeGame" /S /Y /D
+XCOPY "E:\SourceCode\LifeGame_Web\*" "F:\xampp\htdocs\" /S /Y /D
