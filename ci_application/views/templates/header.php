@@ -1,3 +1,2 @@
-<?php
-?>
-header
+<div class="header" align="center">Header</div>
+
