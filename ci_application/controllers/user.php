@@ -20,7 +20,7 @@ class User extends CI_Controller {
 			// Whoops, we don't have a page for that!
 			show_404();
 		}	
-		
+				
 		$this->load->view('templates/header');
 		$this->load->view('user/login');
 		$this->load->view('templates/footer');		

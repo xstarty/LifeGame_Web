@@ -3,20 +3,20 @@ body {
   	margin: 100px auto 0 auto; 
   	font-family: Arial, Helvetica; 
   	font-size: small; 
-  	background-color: #ddd; 
+  	background-color: #fff; 
 }
 
-.header {
-  position: fixed;
-  width: 900px; 
-  height: 100px;
-  top: 0;
-  background:#c0c0c0;
+.header {	
+  	position: fixed;
+  	width: 900px; 
+  	height: 100px;
+  	top: 0;
+  	background:#c0c0c0;  
 }
 
-.footer {
-  position: fixed;
-  width: 900px;  
-  bottom: 0;
-  background:#c0c0c0;
+.footer {	
+  	position: fixed;
+  	width: 900px;  
+  	bottom: 0;
+  	background:#c0c0c0;
 }
