@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'life88.ddns.net,
+	'hostname' => 'life88.ddns.net',
 	'username' => 'root',
 	'password' => 'ga51852',
 	'database' => 'lifegame',
