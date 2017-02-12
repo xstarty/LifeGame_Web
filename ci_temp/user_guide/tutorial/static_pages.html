@@ -466,7 +466,7 @@ you will load libraries, views, and generally command the framework.</p>
 <p>Now you&#8217;ve created your first method, it&#8217;s time to make some basic page
 templates. We will be creating two &#8220;views&#8221; (page templates) that act as
 our page footer and header.</p>
-<p>Create the header at <em>application/views/templates/header.php</em> and add
+<p>Create the header at <em>application/views/inc/_site_header.php</em> and add
 the following code:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">html</span><span class="o">&gt;</span>
         <span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
@@ -480,7 +480,7 @@ the following code:</p>
 <p>The header contains the basic HTML code that you&#8217;ll want to display
 before loading the main view, together with a heading. It will also
 output the <code class="docutils literal"><span class="pre">$title</span></code> variable, which we&#8217;ll define later in the controller.
-Now, create a footer at <em>application/views/templates/footer.php</em> that
+Now, create a footer at <em>application/views/inc/_site_footer.php</em> that
 includes the following code:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span>                <span class="o">&lt;</span><span class="nx">em</span><span class="o">&gt;&amp;</span><span class="nb">copy</span><span class="p">;</span> <span class="mi">2015</span><span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;</span>
         <span class="o">&lt;/</span><span class="nx">body</span><span class="o">&gt;</span>
@@ -508,9 +508,9 @@ page actually exists:</p>
 
         <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">ucfirst</span><span class="p">(</span><span class="nv">$page</span><span class="p">);</span> <span class="c1">// Capitalize the first letter</span>
 
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;templates/header&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;inc/_site_header&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;pages/&#39;</span><span class="o">.</span><span class="nv">$page</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;templates/footer&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;inc/_site_footer&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
