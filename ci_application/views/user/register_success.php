@@ -4,7 +4,7 @@
 
 <div class="container">
 	<div class="alert alert-success">
-		<? echo $account; ?><?php echo $this->lang->line('User_RegisterSuccess'); ?>
-		<a href="<? echo site_url("user/login"); ?>"><?php echo $this->lang->line('User_Login'); ?></a>
+		<?php echo $account; ?><?php echo $this->lang->line('User_RegisterSuccess'); ?>
+		<a href="<?php echo site_url("user/login"); ?>"><?php echo $this->lang->line('User_Login'); ?></a>
 	</div>
 </div>
