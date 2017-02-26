@@ -1,5 +1,5 @@
 body { 
-  	width: 900px; 
+  	width: 80%; 
   	margin: 100px auto 0 auto; 
   	font-family: Arial, Helvetica; 
   	font-size: small; 
@@ -8,15 +8,57 @@ body {
 
 .header {	
   	position: fixed;
-  	width: 900px; 
+  	width: 80%; 
   	height: 100px;
   	top: 0;
   	background:#c0c0c0;  
 }
 
+.header-menu {	
+  	position: fixed;
+  	width: 80%; 
+  	height: 45px;
+  	top: 55px;
+  	background:#333;  
+}
+
 .footer {	
   	position: fixed;
-  	width: 900px;  
+  	width: 80%;  
   	bottom: 0;
   	background:#c0c0c0;
+}
+
+.content_left_menu {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 10%; 
+	height: 93%;
+	display:block;
+	padding: 2em;
+	margin: 5px 0px 0px 0px;		
+	background-color: #aaa; 
+}
+
+.content_top_status {
+	position: relative;	
+	overflow: hidden;
+	width: 86%;
+	height: 5%;
+	overflow: hidden;
+	float: right;
+	margin: 5px 0px 0px  0px;		
+	background-color: #777; 
+}
+
+.content_right_content {
+	position: relative;
+	overflow: hidden;
+	width: 86%;
+	height: 93%;
+	overflow: hidden;
+	float: right;
+	margin: 3px 0px 0px 0px;
+	background-color: #ddd; 
 }
