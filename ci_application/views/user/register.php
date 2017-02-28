@@ -4,7 +4,7 @@
 </head>
 
 <body>
-	<div>
+	<div class="login">
 		<form action="<?php echo site_url("/user/registering"); ?>"
 			method="post">
 		<?php  if (isset($errorMessage)){?>

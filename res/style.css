@@ -29,6 +29,8 @@ body {
   	background:#c0c0c0;
 }
 
+/********************************************************************/
+
 .content_left_menu {
 	position: relative;
 	overflow: hidden;
@@ -61,4 +63,12 @@ body {
 	float: right;
 	margin: 3px 0px 0px 0px;
 	background-color: #ddd; 
+}
+
+/********************************************************************/
+
+.login {	
+	position: fixed;
+  	top: 40%;
+  	left: 40%;
 }

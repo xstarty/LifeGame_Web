@@ -99,10 +99,11 @@ class User extends CI_Controller {
 		}
 		
 		$session ['is_login'] = TRUE;
-		$session ['account'] = $user->account;
+		$session ['account'] = $user->Account;
 		$this->session->set_userdata ( $session );
 		
-		redirect ( site_url ( "/" ) ); // 轉回首頁
+		// 前往取得角色資訊
+		redirect ( site_url ( "char/get_char" ) );
 	}
 	public function logout() {
 		$this->session->sess_destroy ();
