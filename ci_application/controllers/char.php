@@ -8,8 +8,14 @@ class Char extends CI_Controller {
 			show_404 ();
 		}
 	
-		echo "456";
-		
+		$this->load->model ( "CharModel" );
+		if ($this->CharModel->checkCharExist ( $this->session->userdata ( 'account' ) )) {
+			echo "1";
+		}
+		else
+		{		
+			echo "2";
+		}		
 	}
 }
 ?>

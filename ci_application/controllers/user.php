@@ -64,22 +64,14 @@ class User extends CI_Controller {
 			show_404 ();
 		}
 		
-		// 已經登入的話直接回首頁
-		if ($this->session->userdata ( 'is_login' )) {
-			redirect ( site_url ( "/" ) ); // 轉回首頁
-			return true;
-		}
+		$this->isLogin();	// 已經登入的話直接回首頁
 		
 		$this->load->view ( "user/login", Array (
 				"pageTitle" => $this->lang->line ( 'Title_Login' ) 
 		) );
 	}
 	public function logining() {
-		// 已經登入的話直接回首頁
-		if ($this->session->userdata ( 'is_login' )) {
-			redirect ( site_url ( "/" ) ); // 轉回首頁
-			return true;
-		}
+		$this->isLogin();	// 已經登入的話直接回首頁
 		
 		$account = trim ( $this->input->post ( "account" ) );
 		$password = trim ( $this->input->post ( "password" ) );
@@ -108,5 +100,13 @@ class User extends CI_Controller {
 	public function logout() {
 		$this->session->sess_destroy ();
 		redirect ( site_url ( "/" ) ); // 轉回首頁
+	}
+	public function isLogin()
+	{
+		// 已經登入的話直接回首頁
+		if ($this->session->userdata ( 'is_login' )) {
+			redirect ( site_url ( "/" ) ); // 轉回首頁
+			return true;
+		}	
 	}
 }
