@@ -46,7 +46,7 @@ body {
 .content_top_status {
 	position: relative;	
 	overflow: hidden;
-	width: 86%;
+	width: 85%;
 	height: 5%;
 	overflow: hidden;
 	float: right;
@@ -57,7 +57,7 @@ body {
 .content_right_content {
 	position: relative;
 	overflow: hidden;
-	width: 86%;
+	width: 85%;
 	height: 93%;
 	overflow: hidden;
 	float: right;
